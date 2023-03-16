@@ -1,0 +1,54 @@
+﻿<Window x:Class="logintohome.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:logintohome"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="620" Width="1251" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\nathe\Downloads\Telegram Desktop\images.png"></ImageBrush>
+    </Window.Background>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image Source="C:\Users\nathe\Downloads\Telegram Desktop\hall (1).png" Width="90" Height="90" Margin="610,5,10,10"></Image>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="𝑼𝒔𝒆𝒓𝒏𝒂𝒎𝒆" Width="150" FontWeight="Bold" FontSize="25" Foreground="LightYellow" Margin="450,10,10,10"></Label>
+            <TextBox x:Name="txtbox_username" Width="250" Margin="15,5,5,5" Height="40" FontWeight="Bold" FontSize="25" Foreground="LightPink"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="𝑷𝒂𝒔𝒔𝒘𝒐𝒓𝒅" FontWeight="Bold" FontSize="25" Foreground="LightYellow" Margin="450,5,10,5"></Label>
+            <PasswordBox x:Name="pwdbox_pass" PasswordChar="*" Width="250" Margin="29,5,5,5" Height="40" FontWeight="Bold" FontSize="25" Foreground="LightPink" ></PasswordBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="𝑭𝒖𝒍𝒍𝒏𝒂𝒎𝒆" Width="150" FontWeight="Bold" FontSize="25" Foreground="LightYellow" Margin="450,10,10,10" ></Label>
+            <TextBox x:Name="txtbox_fullname" Width="250" Margin="15,5,5,5" Height="40" FontWeight="Bold" FontSize="25" Foreground="LightPink"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="𝑮𝒆𝒏𝒅𝒆𝒓"  Width="200" FontWeight="Bold" FontSize="25" Foreground="LightYellow" Margin="450,0,10,10"></Label>
+            <RadioButton Content="𝑴𝒂𝒍𝒆" Name="rdobtn_male" Margin="14,10,10,10" Width="100" FontSize="25" Foreground="AliceBlue"></RadioButton>
+            <RadioButton Content="𝑭𝒆𝒎𝒂𝒍𝒆" Name="rdobtn_female" Margin="0,10,10,10" Width="120" FontSize="25" Foreground="AliceBlue"></RadioButton>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="𝑴𝒂𝒓𝒊𝒕𝒂𝒍 𝑺𝒕𝒂𝒕𝒖𝒔𝒓"  Width="200" FontWeight="Bold" FontSize="25" Foreground="LightYellow" Margin="450,0,10,10"></Label>
+            <RadioButton Content="𝑴𝒂𝒓𝒓𝒊𝒆𝒅" Name="rdobtn_married" Margin="14,10,10,10" Width="130" FontSize="25" Foreground="AliceBlue"></RadioButton>
+            <RadioButton Content="𝑼𝒏𝒎𝒂𝒓𝒓𝒊𝒆𝒅" Name="rdobtn_unmarried" Margin="0,10,10,10" Width="160" FontSize="25" Foreground="AliceBlue"></RadioButton>
+        </StackPanel>
+        <StackPanel Height="89" Width="137" Margin="90,10,10,10" Background="LightPink" >
+            <Button Height="94" Width="95" x:Name="btn_login" Click="Button_Click">
+                <Button.Content>
+                    <StackPanel Height="68" >
+                          <Image Source="C:\Users\nathe\Downloads\Telegram Desktop\login.png" Width="63" Margin="0,5,10,10" ></Image>
+                        
+                    </StackPanel>
+                </Button.Content>
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

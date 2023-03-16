@@ -1,0 +1,17 @@
+﻿<Window x:Class="logintohome.loginhome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:logintohome"
+        mc:Ignorable="d"
+        Title="loginhome" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\nathe\Downloads\v960-ning-05.jpg"></ImageBrush>
+    </Window.Background>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Name="lbl_welcome" FontSize="26" FontStyle="Italic" FontWeight="Bold" Width="591" Height="100" Margin="130,50,5,5" ></Label>
+        </StackPanel>
+    </StackPanel>
+</Window>
